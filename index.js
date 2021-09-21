@@ -1,5 +1,5 @@
 const { Client, Intents, Collection } = require('discord.js');
-const token = process.env.DISCORDJS_TOKEN;
+const { token } = require('./config');
 const fs = require('fs');
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });

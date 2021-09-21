@@ -10,8 +10,8 @@ module.exports = {
 		const data = await res.json();
 		const children = data.data.children;
 		const randomPost = children[Math.floor(Math.random() * children.length)];
-		const intro = randomPost.data.title;
+		const setup = randomPost.data.title;
 		const punchline = randomPost.data.selftext;
-		await interaction.reply(`${intro} \n ... \n ${punchline}`);
+		await interaction.reply(`${setup} \n ... \n ${punchline}`);
 	},
 };
