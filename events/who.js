@@ -6,7 +6,7 @@ module.exports = {
 			'when?': 'did we ask LOL',
 			'why?': 'no why do we care LMAO',
 		};
-		if (responseObject[message.content]) {
+		if (responseObject[message.content.toLowerCase()]) {
 			message.channel.send(responseObject[message.content]);
 		}
 	},
