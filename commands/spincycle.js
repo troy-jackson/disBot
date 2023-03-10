@@ -8,7 +8,6 @@ module.exports = {
 		.setDescription('Clean up someone\'s act')
 		.addUserOption(option => option.setName('target').setDescription('The dirty lil\' gamer to clean')),
 	async execute(interaction) {
-		console.log(interaction);
 		const washer_channel = await interaction.guild.channels.fetch('649081115784773636');
 		const dryer_channel = await interaction.guild.channels.fetch('683514060712837180');
 		const target = interaction.options.getUser('target');
